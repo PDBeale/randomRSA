@@ -50,9 +50,9 @@ If any of the initialization routines are called after the generator has already
 The user can access the RSA encryption parameters using the routines
 `int randomRSA_get_exponent(uint32 t *exponent);` which returns the RSA exponent e,
 
-`int randomRSA_get_primes(uint32 t *prime1, uint32 t *prime2, uint64 t *composite);` which returns the 32-bit RSA primes p1 and p2, and 64-bit RSA composite n = p1p2,
+`int randomRSA_get_primes(uint32 t *prime1, uint32 t *prime2, uint64 t *composite);` which returns the 32-bit RSA primes p1 and p2, and 64-bit RSA composite n = p1*p2,
 
-`int randomRSA get skipprime(uint64 t *skipprime);` which returns the 64-bit prime q = 263 − 25 used in the linear congruential skip generator (q is the largest prime less than 263),
+`int randomRSA get skipprime(uint64 t *skipprime);` which returns the 64-bit prime q = 2^63 − 25 used in the linear congruential skip generator (q is the largest prime less than 2^63),
 
 `int randomRSA get primitiveroot(uint32 t *primitiveroot);` which returns the 32-bit primitive root mod q used in the linear congruential skip generator.
 
