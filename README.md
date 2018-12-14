@@ -95,5 +95,5 @@ On the University of Colorado Boulder Summit supercomputer, the code can generat
 
 
 ## Contributors
-Author : Professor Paul Beale, Department of Physics, University of Colorado Boulder </br>
+Author : Professor Paul Beale, Department of Physics, University of Colorado Boulder, Email : paul.beale@colorado.edu </br>
 Author : Jetanat Datephanyawat, Department of Physics, University of Colorado Boulder
