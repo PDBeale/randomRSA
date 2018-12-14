@@ -56,11 +56,11 @@ The user can access the RSA encryption parameters using the routines
 
 `int randomRSA get primitiveroot(uint32 t *primitiveroot);` which returns the 32-bit primitive root mod q used in the linear congruential skip generator.
 
-#### The user can change the values of the exponent e using
+The user can change the values of the exponent e using
 `int randomRSA set exponent(uint32 t exponent);`, where exponent must be an odd integer in the range 3 to 257 (recommended values are e = 3, 5, 9, 17),
 
 The user can change the values of primes p1 and p2 using
-`int randomRSA_set_primes(uint32 t prime1, uint32 t prime2);`, where prime1 and prime2 set the values of p1 and p2. The primes p1 and p2 must be safe primes, i.e p1, (p1 − 1)/2, p2, and (p2 − 1)/2 must all be prime. The generator also requires 232 > p1 > p2 > 231.
+`int randomRSA_set_primes(uint32 t prime1, uint32 t prime2);`, where prime1 and prime2 set the values of p1 and p2. The primes p1 and p2 must be safe primes, i.e p1, (p1 − 1)/2, p2, and (p2 − 1)/2 must all be prime. The generator also requires 2^32 > p1 > p2 > 2^31.
 
 The skip prime q, and the primitive root a cannot be changed by the user since they are selected from a very limited set of well-tested values.
 
